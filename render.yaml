@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rahl-xmd-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: OWNER_NUMBER
+        value: "254112399557"
+      - key: BOT_NAME
+        value: "RAHL XMD"
+      - key: PREFIX
+        value: "."
